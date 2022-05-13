@@ -1,0 +1,22 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Array</title>
+
+</head>
+<body>
+    <h2>JavaScript Array</h2>
+    <p id="demo"></p>
+    <script>
+        // Creating an array 
+        const cars = ["BMW", "Audi", "Scoda", "Benz"];
+        let txt = "<ol>";
+        cars.forEach (myFunc);  // looping the Array  
+        txt += "</ol>";
+        document.getElementById ("demo").innerHTML=txt;
+        function myFunc (element) {
+            txt += "<li>" + element + "</li>";
+        }
+    </script>   
+</body>
+</html>
